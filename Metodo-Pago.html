@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago con Tarjeta</title>
+    <link rel="stylesheet" href="styles/style_metodo_pago.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul class="nav-list">
+            <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+            <li><a href="Nuevos Modelos.html">Nuevos Modelos</a></li>
+            <li><a href="Contactanos.html">Contactanos</a></li>
+        </ul>
+        <div class="logo">
+            <a href="index.html">Fusion<span id="logo2Id">SportX</span></a>
+        </div>
+        <label for="" class="userClass">
+            <a href="Registro-Ingreso.html"><i class="bi bi-person"></i><span style="font-size: 12px;">Ingresar</span></a>
+        </label>  
+    </nav>
+<div class="background">
+    <div class="container">
+        <h2>Tarjeta de crédito o débito</h2>
+        <div class="card-class">
+            <div>
+                <h4>Tarjetas de crédito</h4>
+                <div class="card-logos">
+                    <img src="img/visas.png" alt="Visa">
+                    <img src="img/mastercard.png" alt="MasterCard">
+                    <img src="img/americanexpress.png" alt="American Express">
+                </div>
+            </div>
+            <div>
+                <h4>Tarjetas de débito</h4>
+                <div class="card-logos">
+                    <img src="img/bbva.png" alt="BBVA">
+                    <img src="img/dinersclub.png" alt="dinersclub">
+                </div>
+            </div>
+        </div>
+
+        <form action="Frm-Success.html" method="GET">
+            <div class="card-container">
+                <label for="nombre-titular">Nom. Titular</label>
+                <input type="text" id="nombre-titular" placeholder="" required>
+
+                <label for="numero-tarjeta">Num. Tarjeta</label>
+                <input type="text" id="numero-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+            </div>
+
+            <div class="expiracion-class">
+                <div>
+                    <label for="fecha-expiracion">Fecha de expiración</label>
+                    <select id="mes" required>
+                        <option value="" disabled selected>Mes</option>
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Mayo</option>
+                        <option value="06">Junio</option>
+                        <option value="07">Julio</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+
+                    <select id="año" required>
+                        <option value="" disabled selected>Año</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="codigo-seguridad">Código de seguridad</label>
+                    <input type="text" id="codigo-seguridad" placeholder="3 dígitos" required>
+                    <select id="" required>
+                        <option value="" disabled selected>Eliga su Plan</option>
+                        <option value="2024">Basico</option>
+                        <option value="2025">Standar</option>
+                        <option value="2026">Premium</option>
+                    </select>
+                </div>
+            </div>
+
+            <p class="info">Transacciones realizadas vía: <a href="#" target="_blank" style="text-decoration: none;"><b>SecurePay</b></a></p>
+            <p class="info">Tus pagos se realizan de forma segura con encriptación de 256 bits.</p>
+
+            <button type="submit" class="btn-pagar">Pagar</button>
+        </form>
+    </div>
+</div>
+
+    
+<hr style="border: 1px solid rgba(0, 0, 0, 0.486); margin-left: 10%;margin-right: 10%;">
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Boletin Semanal</h4><br>
+                <span>
+                    Suscríbete a nuestro boletín semanal <br>
+                    para recibir las últimas noticias y ofertas.
+                </span>
+            <ul>
+                <li> <form class="newsletter-form">
+                        <input type="email" placeholder="Correo electrónico" class="input-boletin" required>
+                        <button type="submit" class="btn-boletin">Suscribirse</button>
+                    </form>
+                </li>
+            </ul>
+             
+        </div>
+
+        
+        <div class="footer-section">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+                <li><a href="Nuevos Modelos.html">Nuevos Modelos</a></li>
+                <li><a href="Contactanos.html">Contáctanos</a></li>
+                <li><a href="Metodo-Pago.html">Sucripcion</a></li>
+                <li><a href="Reclamos.html">Reclamos</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contactos</h4>
+            <ul>
+                <li>Telefono: <br> +51 987 654 321</li>
+                <li>Email: <br> FusionSportX@hotmail.com</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Redes Sociales</h4><br>           
+                <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+                <a href="#"><i class="bi bi-twitter"></i> Twitter</a><br>
+                <a href="#"><i class="bi bi-youtube"></i> Youtube</a>
+
+        </div>
+    </div><br>
+</footer>
+<div class="footer-bottom">
+    <p>&copy; 2024 FusionSportX. Todos los derechos reservados.</p>
+</div>
+<hr style="border: 1px solid rgba(0, 0, 0, 0.486); margin-left: 30%;margin-right: 30%;">
+</body>
+</html>

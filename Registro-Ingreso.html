@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportX | Registro</title>
+    <link rel="stylesheet" href="styles/style_registro_ingreso.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/Modal-Boletin.js"></script>
+    <script src="js/Reloj.js"></script>
+</head>
+<body>
+    <div class="content">
+   
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul class="nav-list">
+            <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+            <li><a href="Nuevos Modelos.html">Nuevos Modelos</a></li>
+            <li><a href="Contactanos.html">Contactanos</a></li>
+        </ul>
+        <div class="logo">
+            <a href="index.html">Fusion<span id="logo2Id">SportX</span></a>
+        </div>
+        <label for="" class="userClass">
+            <a href="Registro-Ingreso.html"><i class="bi bi-person"></i><span style="font-size: 12px;">Ingresar</span></a>
+        </label>  
+    </nav>
+    <div class="mensaje-container">
+        <h3 style="padding: 10px; color: white;border-right: 1px solid white; border-left: 1px solid white; margin-right: 10px;">INICIO DE SESION</h3>
+        <p>BIENVENIDO A FUSION SPORTX <br> Si ya tienes una cuenta porfavor inicia sesion</p>
+    </div><br><br>
+    <div id="reloj"><p>Hora Actual: 00:00:00</p></div>
+    <div class="background">
+        <div class="container">
+            <div class="login-container">
+                <form id="login-form" action="#" method="GET">
+                    <h2>Iniciar Sesión</h2>
+                    <label for="email" class="label-class">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+                    <label for="password" class="label-class">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+
+                    <button type="submit" class="btn-login">Iniciar Sesión</button>
+                </form>
+            </div>
+            <div class="register-container">
+                <p>¿Aún no tienes una cuenta?</p>
+                <a href="Frm-Registro.html" class="btn-register">Regístrate aquí</a>
+            </div>
+        </div>
+    </div>
+
+<hr style="border: 1px solid rgba(255, 255, 255, 0.747); margin-left: 10%;margin-right: 10%;">
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Boletin Semanal</h4><br>
+                    <span>
+                        Suscríbete a nuestro boletín semanal <br>
+                        para recibir las últimas noticias y ofertas.
+                    </span>
+                <ul>
+                    <li> 
+                        <form class="newsletter-form">
+                            <input type="email-b" placeholder="Correo electrónico" class="input-boletin" required>
+                            <button class="btn-boletin open-modal" onclick="openModal()">Suscribirse</button>
+                        </form>
+                    </li>
+                </ul>
+                 
+            </div>
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Se ha suscrito a las notificaciones por correo</h2>
+                    <p>Si desea cancelar la suscripcion revise su correo</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+                    <li><a href="Nuevos Modelos.html">Nuevos Modelos</a></li>
+                    <li><a href="Contactanos.html">Contáctanos</a></li>
+                    <li><a href="Metodo-Pago.html">Sucripcion</a></li>
+                    <li><a href="Reclamos.html">Reclamos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contactos</h4>
+                <ul>
+                    <li>Telefono: <br> +51 987 654 321</li>
+                    <li>Email: <br> FusionSportX@hotmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4><br>           
+                    <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+                    <a href="#"><i class="bi bi-twitter"></i> Twitter</a><br>
+                    <a href="#"><i class="bi bi-youtube"></i> Youtube</a>
+
+            </div>
+        </div><br>
+    </footer>
+    <div class="footer-bottom">
+        <p style="color: white;">&copy; 2024 FusionSportX. Todos los derechos reservados.</p>
+    </div>
+    <hr style="border: 1px solid rgba(255, 255, 255, 0.712); margin-left: 30%;margin-right: 30%;">
+
+    <script src="js/Validacion.js"></script>
+</div>
+</body>
+</html>

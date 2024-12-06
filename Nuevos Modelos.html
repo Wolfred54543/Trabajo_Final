@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevos Modelos</title>
+    <link rel="stylesheet" href="styles/style_nuevos_modelos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/Filtro-Auto.js"></script>
+</head>
+<body>
+    <!-- MENU DE NAVEGACION -->
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul class="nav-list">
+            <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+            <li><a href="Nuevos Modelos.html">Nuevos Modelos</a></li>
+            <li><a href="Contactanos.html">Contactanos</a></li>
+        </ul>
+        <div class="logo">
+            <a href="index.html">Fusion<span id="logo2Id">SportX</span></a>
+        </div>
+        <label for="" class="userClass">
+            <a href="Registro-Ingreso.html"><i class="bi bi-person"></i><span style="font-size: 12px;">Ingresar</span></a>
+        </label>  
+    </nav>
+    <!-- FIN DEL MENU DE NAVEGACION -->
+
+    <div class="banner" style="background-image: url(img/NuevosModelos_Banner.jpg);">
+        <div class="banner-texto">NUEVOS MODELOS</div>
+    </div>
+    <div class="container-filtro">
+        <div class="filtro">
+            <label for="brand">Filtrar por Marca:</label>
+            <select id="brand">
+                <option value="all">Todos</option>
+                <option value="bmw">BMW</option>
+                <option value="ford">Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+            </select>
+        </div>
+        <div id="carList">
+            <div class="car" data-brand="bmw">BMW iX <hr> <a href="" class="boton-filtro">Ver mas</a></div>
+            <div class="car" data-brand="ford">Ford Mustang GT <hr> <a href="" class="boton-filtro">Ver mas</a></div>
+            <div class="car" data-brand="chevrolet">Corvette Z06 <hr> <a href="" class="boton-filtro">Ver mas</a></div>
+        </div>
+    </div>
+    <div class="car-contenedor">
+        <div class="modelo-contenedor">
+            <a href="AstonMartinDBS.html" style="text-decoration: none; color: black;">
+            <img class="modelo1" src="img/NuevosModelos1.webp" alt="Producto 1">   
+            <br>
+            <div class="membresia">BASICO</div>
+            <div>Aston Martin DBS Superleggera Concorde</div>
+            </a>
+        </div>
+    
+        <div class="modelo-contenedor">
+            <a href="FerrariRomaSpider.html" style="text-decoration: none; color: black;">
+            <img class="modelo2" src="img/NuevosModelos2.webp" alt="Producto 2"> 
+            <br>     
+            <div class="membresia">ESTANDAR</div>
+            <div>Ferrari Roma Spider 620 CV Descapotable</div>
+            </a>
+        </div>
+    
+        <div class="modelo-contenedor">
+            <img class="modelo3" src="img/NuevosModelos3we.png" alt="Producto 3">  
+            <br>    
+            <div class="membresia">PREMIUM</div>
+            <div>Porche 911 Turbo S Exclusive Series</div>
+        </div>
+
+        <div class="modelo-contenedor">
+            <img class="modelo2" src="img/NuevosModelos4.webp" alt="Producto 4"> 
+            <br>     
+            <div class="membresia">PREMIUM</div>
+            <div>Maserati MC20 Twin-turbo Nettuno</div>
+        </div>
+    </div>
+    <div class="car-contenedor">
+        <div class="modelo-contenedor">
+            <img class="modelo1" src="img/NuevosModelos1.webp" alt="Producto 1">   
+            <br>
+            <div class="membresia">BASICO</div>
+            <div>Aston Martin DBS Superleggera Concorde</div>
+        </div>
+    
+        <div class="modelo-contenedor">
+            <img class="modelo2" src="img/NuevosModelos2.webp" alt="Producto 2"> 
+            <br>     
+            <div class="membresia">ESTANDAR</div>
+            <div>Ferrari Roma Spider 620 CV Descapotable</div>
+        </div>
+    
+        <div class="modelo-contenedor">
+            <img class="modelo3" src="img/NuevosModelos3we.png" alt="Producto 3">  
+            <br>    
+            <div class="membresia">PREMIUM</div>
+            <div>Porche 911 Turbo S Exclusive Series</div>
+        </div>
+
+        <div class="modelo-contenedor">
+            <img class="modelo2" src="img/NuevosModelos4.webp" alt="Producto 4"> 
+            <br>     
+            <div class="membresia">PREMIUM</div>
+            <div>Maserati MC20 Twin-turbo Nettuno</div>
+        </div>
+    </div><hr><br><br><br>
+
+
+
+    <div class="tabla-form">
+       <table>
+            <tr>
+                <th></th>
+                <th id="basico">BASICO</th>
+                <th id="estandar">ESTANDAR</th>
+                <th id="premium">PREMIUM</th>
+            </tr>
+            <tr>
+                <td>Precio Mensual</td>
+                <td>S/750.00</td>
+                <td>S/1,875.00</td>
+                <td>S/5,625.00</td>
+            </tr>
+            <tr>
+                <td>Vehiculo</td>
+                <td>1 Vehiculo Deportivo Disponible</td>
+                <td>2 Vehiculos Deportivos Disponible</td>
+                <td>Acceso a Cualquier Vehiculo Deportivo</td>
+            </tr>
+            <tr>
+                <td>Reserva al Mes</td>
+                <td>2 Reservas</td>
+                <td>4 Reservas</td>
+                <td>Reservas Ilimitadas</td>
+            </tr>
+            <tr>
+                <td>Kilometraje</td>
+                <td>500 km/mes</td>
+                <td>1,000 km/mes</td>
+                <td>Kilometraje Ilimitado</td>
+            </tr>
+            <tr>
+                <td>Eventos Exclusivos</td>
+                <td>Acceso a 1 Evento</td>
+                <td>Acceso a 2 Eventos</td>
+                <td>Acceso a Todos los Eventos</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="Metodo-Pago.html" class="botonPlan1">Elegir Plan</a></td>
+                <td><a href="Metodo-Pago.html" class="botonPlan2">Elegir Plan</a></td>
+                <td><a href="Metodo-Pago.html" class="botonPlan3">Elegir Plan</a></td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <hr style="border: 1px solid rgba(0, 0, 0, 0.486); margin-left: 10%;margin-right: 10%;">
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Boletin Semanal</h4><br>
+                    <span>
+                        Suscríbete a nuestro boletín semanal <br>
+                        para recibir las últimas noticias y ofertas.
+                    </span>
+                <ul>
+                    <li> <form class="newsletter-form">
+                            <input type="email" placeholder="Correo electrónico" class="input-boletin" required>
+                            <button type="submit" class="btn-boletin">Suscribirse</button>
+                        </form>
+                    </li>
+                </ul>
+                 
+            </div>
+
+            
+            <div class="footer-section">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+                    <li><a href="Nuevos Modelos.html">Nuevos Modelos</a></li>
+                    <li><a href="Contactanos.html">Contáctanos</a></li>
+                    <li><a href="Metodo-Pago.html">Sucripcion</a></li>
+                    <li><a href="Reclamos.html">Reclamos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contactos</h4>
+                <ul>
+                    <li>Telefono: <br> +51 987 654 321</li>
+                    <li>Email: <br> FusionSportX@hotmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4><br>           
+                    <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+                    <a href="#"><i class="bi bi-twitter"></i> Twitter</a><br>
+                    <a href="#"><i class="bi bi-youtube"></i> Youtube</a>
+
+            </div>
+        </div><br>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 FusionSportX. Todos los derechos reservados.</p>
+    </div>
+    <hr style="border: 1px solid rgba(0, 0, 0, 0.486); margin-left: 30%;margin-right: 30%;">
+</body>
+</html>

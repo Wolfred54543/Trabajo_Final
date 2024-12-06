@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpresaX | Inicio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/Splash.js"></script>
+    <script src="js/Modal-Noticia.js"></script>
+</head>
+<body>
+    <div class="splash-screen" id="splash">
+        <div class="logoSplash">
+            <span class="letter" style="animation-delay: 0s;">F</span>
+            <span class="letter" style="animation-delay: 0.1s;">u</span>
+            <span class="letter" style="animation-delay: 0.2s;">s</span>
+            <span class="letter" style="animation-delay: 0.3s;">i</span>
+            <span class="letter" style="animation-delay: 0.4s;">o</span>
+            <span class="letter" style="animation-delay: 0.5s;">n</span>
+            <span class="letter" style="animation-delay: 0.6s; color: crimson;">S</span>
+            <span class="letter" style="animation-delay: 0.7s; color: crimson;">p</span>
+            <span class="letter" style="animation-delay: 0.8s; color: crimson;">o</span>
+            <span class="letter" style="animation-delay: 0.9s; color: crimson;">r</span>
+            <span class="letter" style="animation-delay: 1s; color: crimson;">t</span>
+            <span class="letter" style="animation-delay: 1.1s; color: crimson;">X</span>
+        </div>
+    </div>
+    <div class="content" id="main-content">
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul class="nav-list">
+            <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+            <li><a href="Nuevos Modelos.html">Nuevos Modelos</a></li>
+            <li><a href="Contactanos.html">Contactanos</a></li>
+                <div class="toggle-container" id="themeToggle">
+                <div class="toggle"></div>
+            </div>
+        </ul>
+        <div class="logo">
+            <a href="index.html">Fusion<span id="logo2Id">SportX</span></a>
+        </div>
+        <label for="" class="userClass">
+            <a href="Registro-Ingreso.html"><i class="bi bi-person"></i><span style="font-size: 12px;">Ingresar</span></a>
+        </label>  
+    </nav>
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="media/LaFerrari Aperta Mountain Run.mp4">
+        </video>        
+    </div>
+
+    <div class="marquee-container">
+        <div class="marquee">
+            <div class="marquee-text">
+                ¡Bienvenido a nuestro configurador de vehículos! ¡Explora todas las opciones que tenemos para ti!
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>Bienvenido a Fusion<span style="color: red;">SportX</span></h1>
+        <p></p>
+        <p>Ademas es tu destino para las últimas noticias y novedades del mundo automotriz.</p>
+    </header>
+    
+    <div class="model-container">
+        <div class="card-porche">
+            <div class="card-inner-porche">
+                <div class="card-front">
+                    <h1>Porche 911 Carrera</h1>
+                    <h2>Aceleracion <br> 4.1 s</h2>
+                    <h2>Potencia <br> 290 kW / 394 PS</h2>
+                    <h2>Velocidad máxima <br> 294 km/h</h2>
+                    <p></p>
+                    <video autoplay loop muted src="media/Porsche 911.mp4" class="img-porchef">
+                </div>
+                <div class="card-back">
+                    <h1>Detalles Tecnicos</h1>
+                    <img src="img/porche_detalles_tecnicos.png" alt="img" class="img-porcheb2">
+                    <img src="img/porche_frontal.avif" alt="img" class="img-porcheb">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <main>
+        <section class="virtudes">
+            <h2>Nuestras Virtudes</h2>
+            <div class="virtudes-container">
+                <div class="virtud-card">
+                    <i class="bi bi-car-front" class="virtud-icon"></i>
+                    <h3>Calidad</h3>
+                    <p>Ofrecemos los mejores autos con los estándares más altos de calidad.</p>
+                </div>
+                <div class="virtud-card">
+                    <i class="bi bi-file-arrow-up" class="virtud-icon"></i>
+                    <h3>Innovación</h3>
+                    <p>Siempre a la vanguardia en tecnología automotriz.</p>
+                </div>
+                <div class="virtud-card">
+                    <i class="bi bi-file-person" class="virtud-icon"></i>
+                    <h3>Servicio al Cliente</h3>
+                    <p>Brindamos un servicio excepcional a todos nuestros clientes.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="noticias">
+            <h2>Últimas Noticias</h2>
+            <div class="noticias-container">
+                <div class="noticia-card">
+                    <img src="img/noticia1.jpg" alt="Noticia 1">
+                    <h3>Nueva línea de autos eléctricos</h3>
+                    <p>Descubre nuestra nueva gama de autos eléctricos que combinan eficiencia y estilo.</p>
+                    <button class="btn-boletin open-modal" onclick="openModal()">Leer Mas</button>
+                </div>
+                <div class="noticia-card">
+                    <img src="img/noticia2.jpg" alt="Noticia 2">
+                    <h3>Consejos para el mantenimiento de tu auto</h3>
+                    <p>Te damos los mejores consejos para mantener tu vehículo en óptimas condiciones.</p>
+                    <button class="btn-boletin open-modal" onclick="openModal()">Leer Mas</button>
+                </div>
+                <div class="noticia-card">
+                    <img src="img/noticia3.jpg" alt="Noticia 3">
+                    <h3>Innovaciones en seguridad automotriz</h3>
+                    <p>Conoce las últimas innovaciones que mejoran la seguridad en los autos modernos.</p>
+                    <button class="btn-boletin open-modal" onclick="openModal()">Leer Mas</button>
+                </div>
+            </div>
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>INNOVACION AUTOMOTRIZ</h2>
+                        <p> 
+                            La tecnología automotriz ha avanzado a pasos agigantados, transformando la forma en que experimentamos la seguridad en nuestros vehículos.
+                            Hoy en día, características como los sistemas de frenos antibloqueo, las cámaras de reversa y los sensores de colisión se han convertido
+                            en elementos esenciales que no solo protegen a los ocupantes, sino que también previenen accidentes.
+                            Estas innovaciones no solo brindan tranquilidad, sino que también fomentan una conducción más responsable y consciente.
+                            Además, la incorporación de inteligencia artificial y conectividad en tiempo real está revolucionando la protección automotriz.
+                            Los vehículos modernos pueden anticipar situaciones de peligro y alertar a los conductores, mejorando notablemente la respuesta ante emergencias.
+                        </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="button-container">
+        <button id="toggleSection1">Mostrar Sección 1</button>
+        <button id="toggleSection2">Mostrar Sección 2</button>
+        <button id="toggleSection3">Mostrar Sección 3</button>
+    </div>
+    
+    <div class="section" id="section1">
+        <h2>Seccion 1</h2>
+        <p>Contenido de la sección 1</p>
+    </div>
+    
+    <div class="section" id="section2">
+        <h2>Sección 2</h2>
+        <p>Contenido de la sección 2</p>
+    </div>
+    
+    <div class="section" id="section3">
+        <h2>Sección 3</h2>
+        <p>Contenido de la sección 3</p>
+    </div>
+    <br><br>
+
+    <div class="banner-cat">
+        <div class="banner-text">¿Aun no Tienes una Cuenta?</div>
+        <a href="Registro-Ingreso.html" class="banner-button">Crear Cuenta</a>
+    </div>
+    
+    <div class="banner-cat">
+        <div class="banner-text">Solicita Una Suscripcion Ahora</div>
+        <a href="Metodo-Pago.html" class="banner-button">Ver Planes</a>
+    </div>
+    
+    <div class="banner-cat">
+        <div class="banner-text">Revisa Toda la Gama de Vehiculos</div>
+        <a href="Nuevos Modelos.html" class="banner-button">Ver Mas</a>
+    </div>
+  
+
+    <hr style="border: 1px solid rgba(0, 0, 0, 0.486); margin-left: 10%;margin-right: 10%;">
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Boletin Semanal</h4><br>
+                    <span>
+                        Suscríbete a nuestro boletín semanal <br>
+                        para recibir las últimas noticias y ofertas.
+                    </span>
+                <ul>
+                    <li> <form class="newsletter-form">
+                            <input type="email" placeholder="Correo electrónico" class="input-boletin" required>
+                            <button type="submit" class="btn-boletin">Suscribirse</button>
+                        </form>
+                    </li>
+                </ul>
+                 
+            </div>
+
+            
+            <div class="footer-section">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+                    <li><a href="Nuevos Modelos.html">Nuevos Modelos</a></li>
+                    <li><a href="Contactanos.html">Contáctanos</a></li>
+                    <li><a href="Metodo-Pago.html">Sucripcion</a></li>
+                    <li><a href="Reclamos.html">Reclamos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contactos</h4>
+                <ul>
+                    <li>Telefono: <br> +51 987 654 321</li>
+                    <li>Email: <br> FusionSportX@hotmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4><br>           
+                    <a href="https://facebook.com"><i class="bi bi-facebook"></i> Facebook</a><br>
+                    <a href="https://twitter.com"><i class="bi bi-twitter"></i> Twitter</a><br>
+                    <a href="https://youtube.com"><i class="bi bi-youtube"></i> Youtube</a>
+
+            </div>
+        </div><br>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 FusionSportX. Todos los derechos reservados.</p>
+    </div>
+    <hr style="border: 1px solid rgba(0, 0, 0, 0.486); margin-left: 30%;margin-right: 30%;">
+
+    <div class="chat-container" id="chatContainer">
+        <div class="messages" id="messages"></div>
+        <div class="input-container">
+            <button id="sendButton">Enviar</button>
+            <input type="text" id="messageInput" placeholder="Escribe tu mensaje..." /> 
+        </div>
+      </div>
+    
+      <button class="floating-button" id="toggleChat"><i class="bi bi-chat-dots"></i></button>
+      <script src="js/Chat.js"></script>
+      <script src="js/Selector.js"></script>
+      <script src="js/Tema-Claro-Oscuro.js"></script>
+</body>
+</html>

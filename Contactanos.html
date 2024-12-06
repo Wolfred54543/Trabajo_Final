@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style_contactanos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <title>FusionSportX | Contactanos</title>
+</head>
+<body>
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul class="nav-list">
+            <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+            <li><a href="Nuevos Modelos.html">Nuevos Modelos</a></li>
+            <li><a href="Contactanos.html">Contactanos</a></li>
+        </ul>
+        <div class="logo">
+            <a href="index.html">Fusion<span id="logo2Id">SportX</span></a>
+        </div>
+        <label for="" class="userClass">
+            <a href="Registro-Ingreso.html"><i class="bi bi-person"></i><span style="font-size: 12px;">Ingresar</span></a>
+        </label>  
+    </nav>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="img/Contactanos.webp" alt="Imagen 1"></div>
+            <div class="slide"><img src="img/Contactanos2.webp" alt="Imagen 2"></div>
+            <div class="slide"><img src="img/Contactanos3.jpg" alt="Imagen 3"></div>
+        </div>
+        <div class="slide-btn">
+            <span class="btnP" data-index="0"></span>
+            <span class="btnP" data-index="1"></span>
+            <span class="btnP" data-index="2"></span>
+        </div>
+    </div>
+        <h1 class="msj-slider">CONTACTANOS</h1>
+    <div class="container">
+        <h1>Queremos Conocerte Mejor</h1>
+        <form id="datosPersonales" class="container-formulario">
+            <div class="form-group">
+                <div class="option">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" class="input" id="nombres" placeholder="Ingrese sus nombres completos" required>
+                </div>
+                <div class="option">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" class="input" id="apellidos" placeholder="Ingrese sus apellidos completos" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" class="input" id="correo" placeholder="Ingrese su correo electrónico" required>
+                </div>
+                <div>
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <input type="text" class="input" id="nacionalidad" placeholder="Ingrese su nacionalidad" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" class="input" id="direccion" placeholder="Ingrese su dirección" required>
+                </div>
+                <div>
+                    <label for="distrito">Distrito:</label>
+                    <input type="text" class="input" id="distrito" placeholder="Ingrese su distrito" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="provincia">Provincia:</label>
+                    <input type="text" class="input" id="provincia" placeholder="Ingrese su provincia" required>
+                </div>
+                <div>
+                    <label for="region">Región:</label>
+                    <input type="text" class="input" id="region" placeholder="Ingrese su región" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="dni">DNI:</label>
+                    <input type="number" class="input" id="dni" placeholder="Ingrese su número de DNI" required>
+                </div>
+                <div>
+                    <label for="anioNacimiento">Año de Nacimiento:</label>
+                    <input type="number" class="input" id="anioNacimiento" placeholder="Ingrese su año de nacimiento" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="text" class="input" id="fechaNacimiento" placeholder="dd/mm/aaaa" required>
+                </div>
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" required>
+                        <option value="">Seleccione su sexo</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="usoVehiculo">Uso del Vehículo:</label>
+                    <select id="usoVehiculo" required>
+                        <option value="">Seleccione el uso</option>
+                        <option value="personal">Uso personal</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="combustible">Tipo de Combustible Preferido:</label>
+                    <select id="combustible" required>
+                        <option value="">Seleccione un tipo de combustible</option>
+                        <option value="gasolina">Gasolina</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="electrico">Eléctrico</option>
+                        <option value="hibrido">Híbrido</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div style="flex: 1 1 100%;">
+                    <label for="opinion">Queremos Saber Tu Opinión:</label>
+                    <textarea id="opinion" placeholder="Ingrese su opinión" required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+ 
+
+    <hr style="border: 1px solid rgba(0, 0, 0, 0.486); margin-left: 10%;margin-right: 10%;">
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Boletin Semanal</h4><br>
+                    <span>
+                        Suscríbete a nuestro boletín semanal <br>
+                        para recibir las últimas noticias y ofertas.
+                    </span>
+                <ul>
+                    <li> <form class="newsletter-form">
+                            <input type="email" placeholder="Correo electrónico" class="input-boletin" required>
+                            <button type="submit" class="btn-boletin">Suscribirse</button>
+                        </form>
+                    </li>
+                </ul>
+                 
+            </div>
+
+            
+            <div class="footer-section">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="Acerca de Nosotros.html">Acerca de Nosotros</a></li>
+                    <li><a href="Nuevos Modelos.html">Nuevos Modelos</a></li>
+                    <li><a href="Contactanos.html">Contáctanos</a></li>
+                    <li><a href="Metodo-Pago.html">Sucripcion</a></li>
+                    <li><a href="Reclamos.html">Reclamos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contactos</h4>
+                <ul>
+                    <li>Telefono: <br> +51 987 654 321</li>
+                    <li>Email: <br> FusionSportX@hotmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4><br>           
+                    <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+                    <a href="#"><i class="bi bi-twitter"></i> Twitter</a><br>
+                    <a href="#"><i class="bi bi-youtube"></i> Youtube</a>
+
+            </div>
+        </div><br>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 FusionSportX. Todos los derechos reservados.</p>
+    </div>
+    <hr style="border: 1px solid rgba(0, 0, 0, 0.486); margin-left: 30%;margin-right: 30%;">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById("datosPersonales").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Mostrar una alerta de éxito
+            Swal.fire({
+                title: 'Éxito!',
+                text: 'Formulario enviado con éxito.',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+            });
+        });
+    </script>
+    <script src="js/Slider-Contactanos.js"></script>
+</body>
+</html>
