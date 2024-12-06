@@ -1,0 +1,476 @@
+/*PAGINA ACERCA DE NOSOTROS*/
+
+/*CONFIGURACION DEL CUERPO AFECTA TODA LA PAGINA*/
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: white;
+    background-color: #161A11;
+}
+
+/*BARRA DE NAVEGACION DE LA PAGINA WEB*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    min-height: 50px;
+    z-index: 1000;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    margin-left: 50px;
+}
+
+#logo2Id {
+    color: rgb(235, 31, 4);
+}
+
+/*ESTILOS DEL MENU*/
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: rgb(235, 31, 4);
+}
+
+/*ESTILOS DEL MENU EN ICONO*/
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    height: 2px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    margin: 3px 0;
+}
+.userClass{
+    color: white;
+    font-size: 20px;
+    margin-left: 37%;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+}
+.userClass a{
+    color: white;
+    text-decoration: none;
+}
+/*MENU PARA PANTALLAS INFERIORES A 868PX*/
+@media (max-width: 1190px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.85);
+        width: 100%; 
+        z-index: 1000;
+    }
+    .nav-list li {
+        margin: 10px 0; 
+    }
+    .menu-icon {
+        display: flex; 
+    } 
+    #menu-toggle:checked + .menu-icon + .nav-list {
+        display: flex; 
+    }
+}
+/*FOOTER DE LA PAGINA WEB*/
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px 10%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; 
+    justify-content: space-around;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(126, 126, 126);
+}
+
+.footer-section h4 {
+    margin-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: red;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; 
+}
+
+.footer-bottom {
+    text-align: center; 
+    margin-top: 20px;
+    font-size: 14px;
+}
+.btn-boletin{
+    background-color: crimson;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.btn-boletin:hover{
+    transition: 1s;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.input-boletin{
+    padding: 10px;
+    border-radius: 5px;
+}
+/*FOOTER PARA PANTALLAS INFERIORES A 1300PX*/
+@media (max-width: 1300px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-section{
+        border: none;
+        border-bottom: 1px solid rgb(126, 126, 126);
+        padding-bottom: 5px;
+    }
+}
+
+
+/*CONTENIDO DE LA PAGINA*/
+.contenidoClass{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*CONTENIDO INTERACTIVO (NAV)*/
+.navContentClass a{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+    display: flex;
+    display: contents;
+    user-select: none; 
+    border-bottom: 1px solid black;
+
+}
+.navContentClass a:hover{
+    color: green;
+    border-bottom: 1px solid green;
+}
+li{
+    list-style-type: none;
+}
+
+.fabricaClass{
+    width: 100%;
+    height: 500px;
+}
+.contenidoClass{
+    text-align: center;
+    word-break: break-all;
+    letter-spacing: 1.50px;
+}
+
+/*IFRAME GOOGLE MAP*/
+.mapa-form{
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    background:linear-gradient(to left,rgb(100, 0, 0), black,rgba(100, 0, 0));
+}
+iframe {
+    width: 80%;
+    height: 80%;
+    border: none; 
+}
+
+/* ESTADISTICAS DE LA EMPRESA*/
+.estadisticas-form {
+    max-width: 2000px;
+    margin: auto;
+    background: #161A11;
+    padding: 20px;
+   
+    color: white;
+    font-size: 15pt;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.estadisticas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.stat {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: #1a2e0181;
+    border-radius: 8px;
+    margin: 10px;
+}
+.stat h2 {
+    color: #ffffff;
+}
+.counter {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0;
+}
+.description {
+    font-size: 24px;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden; 
+    border-radius: 10px; 
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease; 
+}
+.slide {
+    min-width: 100%; 
+    box-sizing: border-box; 
+}
+img {
+    width: 100%; 
+    height: 800px; 
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    z-index: 10; 
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+@media (max-width: 1200px) {
+    .prev, .next {
+        padding: 9px; 
+        font-size: 17px; 
+    }
+    img{
+        height: 400px;
+    }
+}
+@media (max-width: 600px) {
+    .prev, .next {
+        padding: 8px; 
+        font-size: 16px; 
+    }
+    img{
+        height: 200px;
+    }
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background: rgba(211, 211, 211, 0.199);
+    position: absolute;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+#tarjeta1 {
+    background-image: url(../img/Acerca-Nosotros-ferrari-logo.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(3px);
+}
+#tarjeta2 {
+    background-image: url(../img/Acerca-Nosotros-porche-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(3px);
+}
+#tarjeta3 {
+    background-image: url(../img/Acerca-Nosotros-chevrolet-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(3px);
+}
+#tarjeta4 {
+    background-image: url(../img/Acerca-Nosotros-aston-martin-logo.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(3px);
+}
+  .main:hover #tarjeta1 {
+    transform: translateX(-100px) rotate(-40deg);
+}
+  .main:hover #tarjeta2 {
+    transform: translateX(-50px) rotate(-30deg);
+}
+  .main:hover #tarjeta3 {
+    transform: translateX(0) rotate(-20deg);
+}
+  .main:hover #tarjeta4 {
+    transform: translateX(50px) rotate(-10deg);
+}
+#tarjeta1:hover {
+    transform: translateX(-150px) rotate(0deg) !important;
+}
+#tarjeta2:hover {
+    transform: translateX(-100px) rotate(0deg) !important;
+}
+#tarjeta3:hover {
+    transform: translateX(-50px) rotate(0deg) !important;
+}
+#tarjeta4:hover {
+    transform: translateX(50px) rotate(0deg) !important;
+}
+.main {
+    display: grid;
+    height: 30vmax;
+    place-items: center;
+    background: repeating-linear-gradient(to left, purple,black,purple);
+}
+
+@media (max-width: 1720px){
+    .card {
+        width: 250px;
+        height: 350px;
+    }
+}
+@media (max-width: 1460px){
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+}
+@media (max-width: 1240px){
+    .card {
+        width: 150px;
+        height: 250px;
+    }
+}
+@media (max-width: 1000px){
+    .card {
+        width: 120px;
+        height: 220px;
+    }
+}
+
+/*Marquee*/
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%; 
+    animation: marquee 20s linear infinite; 
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+.colored {
+    display: inline-block;
+    font-size: 80px;
+}
